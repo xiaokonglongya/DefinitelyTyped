@@ -4002,7 +4002,7 @@ interface PlusKey {
      * 
      * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
      */
-    addEventListener(event?: PlusKeyKeyType, listener?: (result: PlusKeyKeyEvent) => void, capture?: boolean): void;
+    addEventListener(event?:keyof PlusKeyKeyType, listener?: (result: PlusKeyKeyEvent) => void, capture?: boolean): void;
     /**
      * 隐藏软键盘
      * 隐藏已经显示的软键盘，如果软键盘没有显示则不做任何操作。
